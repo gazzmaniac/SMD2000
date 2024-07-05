@@ -21,6 +21,15 @@ Design is open source hardware.
 ## Requirements
 To make this project work you also need to build an Agnus card and a CPU card.  They are documented separately.
 
+Basic CPU card: https://github.com/gazzmaniac/SMD2000_cpu-card
+
+2 MB Agnus card: https://github.com/gazzmaniac/SMD2000_Agnus2MB 
+
+1 MB SMD Agnus card: https://github.com/gazzmaniac/Agnus_1MB 
+
+1 MB TTH Agnus card: https://github.com/gazzmaniac/Agnus_1MB_TTH
+
+
 The SMD2000 project requires a donor Amiga, either an A500, A500+, A2000, or A600 plus a Gary.
 
 
