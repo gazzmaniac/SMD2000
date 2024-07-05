@@ -48,6 +48,10 @@ https://github.com/hoglet67/RGBtoHDMI/releases
 ## Notes and Eratta
 Serial Port and Mouse Port are the same shape!  Now I know why Commodore used a 25 pin Serial port!  Be extra careful to not connect mouses to the serial port and serial devices to the mouse port otherwise there will be a release of magic smoke!  Recommend using DB9 protector for serial port e.g.: https://www.thingiverse.com/thing:2121877
 
+### Power
+Motherboard accepts a standard ATX PSU connector; both 20 and 24 pin versions work.  There is a header for a standard momentary push button switch which latches a 555 in bistable mode.  There is also a header to use a normal toggle switch or jumper to bypass the latching circuit and short PS_ON to GND.
+The machine will happily run from a PicoPSU; the prototypes both ran from a PicoPSU-120-WI-25 powered from an old 19v laptop supply.  Just don't go connecting big loads like 5-1/4" hard disks to it.
+
 ### ROM
 The SMD2000 has address lines for 1 MB or 2 MB ROMs.  Jumpers are present on the upper two address lines to switch between four 512 kb rom images (or two 1 MB images).
 
@@ -89,6 +93,22 @@ I've added JLC's part number as a field in Kicad for many of the components so i
 This is a self-funded project and none of the companies mentioned have paid me anything.  This information is simply for your information, you can buy your PCB and component from whoever you like.
 
 Finally, I had dramas with the tiny resistor packs every time I had to install them.  They're a real pain in the bum to solder by hand, and because JLC didn't have most of them in stock so I had to do it myself.  If your board doesn't work straight away, try reflowing all the resisitor packs.  If your mouse doesn't move check the resistor packs.  If you're cracking the shits it's probably because of the resistor packs.  You get the picture.  If you have a microscope it's really useful to check each one as you go.
+
+
+## 3D Prints
+An IO plate for the motherboard included.  Includes space for all the connectors on the back of the motherboard, plus parallel,  joystick, HDMI, and the Pi Button.
+
+There is also a print for a bracket to hold a gotek and the power connector for a PicoPSU that fits in the spot for an SFX PSU.  It's tight, you'll probably need to change the right angle 34 pin and berg connectors for vertical connectors.
+
+Photos of both are below, apologies for the print quality of the gotek bracket, I will update with a picture of a better quality print when I have time to print one.
+
+FreeCad (v0.20.1) files are included so feel free to modify as needed.
+
+
+![20240702_223638](https://github.com/gazzmaniac/SMD2000/assets/54204858/f92a20d3-b6d5-425e-8cbb-d48b7f64e824)
+![20240704_085834](https://github.com/gazzmaniac/SMD2000/assets/54204858/6c4af47d-0496-43c0-932f-00b400268f7f)
+![20240704_085838](https://github.com/gazzmaniac/SMD2000/assets/54204858/92507fc0-53a5-4fb1-9a5f-145e0ef1dd76)
+
 
 ## References
 ### Commodore Amiga References
