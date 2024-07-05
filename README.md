@@ -1,16 +1,13 @@
 # SMD2000
 A mini-DTX version of the Amiga 2000 (motherboard)
 
-SMD 2000 Motherboard
-*-----------------------------------------------------------------------------*
+# SMD 2000 Motherboard
 This is the motherboard for the SMD2000 "BUSHFIRE" project, a mini-DTX sized Amiga 2000.
 Official project information can be found at Amiga Retro Brisbane projects page:
 https://www.amigaretro.com/projects/
 
 
-Licensing
-*-----------------------------------------------------------------------------*
-LICENSING:
+# Licensing
 Design is open source hardware.
 1. Any and all derivative designs must also be open source.
 2. No person, business, or other entity associated with this design shall be liable for any damages incurred by anyone as a result of using this design.  If you do not accept this condition do not build the project.
@@ -21,15 +18,13 @@ Design is open source hardware.
 7. All Other Rights Reserved.
 
 
-Requirements
-*-----------------------------------------------------------------------------*
+# Requirements
 To make this project work you also need to build an Agnus card and a CPU card.  They are documented separately.
 
 The SMD2000 project requires a donor Amiga, either an A500, A500+, A2000, or A600 plus a Gary.
 
 
-Useful Links
-*-----------------------------------------------------------------------------*
+# Useful Links
 Bluster - in case you don't have a Buster IC (i.e. your donor machine is an A500):
 https://github.com/LIV2/Bluster/tree/master
 Bluster drop in replacement is not tested with the SMD2000 yet but there is no reason it will not work (the real Buster is confirmed working).
@@ -41,8 +36,7 @@ Latest RGB2HDMI software can be found at:
 https://github.com/hoglet67/RGBtoHDMI/releases
 
 
-Notes and Eratta
-*-----------------------------------------------------------------------------*
+# Notes and Eratta
 Serial Port and Mouse Port are the same shape!  Now I know why Commodore used a 25 pin Serial port!  Be extra careful to not connect mouses to the serial port and serial devices to the mouse port otherwise there will be a release of magic smoke!  Recommend using DB9 protector for serial port e.g.: https://www.thingiverse.com/thing:2121877
 
 ROM:
@@ -72,8 +66,7 @@ NB the LEDs have changed since the final prototype.  The extra LED options (othe
 Motherboard mounting holes had to be moved a little after the first prototype, and as a result the board was made 4 mm wider than "DTX" specification (on the slots side) but it still fits in the ML09 case.  Be careful if you intend to fit it in a tighter case.
 
 
-Fabrication Notes
-*-----------------------------------------------------------------------------*
+# Fabrication Notes
 Mouser part numbers for all components you can buy there are in the metadata for the symbols.  This has been exported as a CSV file, note this CSV file does not state which are Do Not Populate.
 
 Use the interactive Bill of Materials for placing components, ibom.html.
@@ -87,8 +80,7 @@ This is a self-funded project and none of the companies mentioned have paid me a
 
 Finally, I had dramas with the tiny resistor packs every time I had to install them.  They're a real pain in the bum to solder by hand, and because JLC didn't have most of them in stock so I had to do it myself.  If your board doesn't work straight away, try reflowing all the resisitor packs.  If your mouse doesn't move check the resistor packs.  If you're cracking the shits it's probably because of the resistor packs.  You get the picture.  If you have a microscope it's really useful to check each one as you go.
 
-References
-*-----------------------------------------------------------------------------*
+# References
 Commodore Amiga References:
 Commodore Amiga A500/A2000 Technical Reference Manual.
 Commodore schematics for A2000 Rev 4 & Rev 6.2, A500 Rev 6 & Rev 8 (A500+), and A1200 R1D4 schematics.  Scanned originals and amigawiki.org rebuilds referenced.
@@ -121,3 +113,4 @@ Technical Guides:
 CTS Corporation Application Note: Crystal Basics, CTS Corporation.
 A Guide to Debouncing by Jack G. Ganssle © 2004 The Ganssle Group.
 555 timer in monostable mode https://todbot.com/blog/2010/01/02/momentary-button-as-onoff-toggle-using-555/.
+
