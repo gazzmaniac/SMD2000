@@ -1,0 +1,62 @@
+Changes from A2000 Rev6 Motherboard:
+Page 1:
+CPU has been removed, CPU only in CPU slot now.
+7M & BG signals removed from this page.
+
+Page 2:
+CN250 and CN251 are internal headers for MOUSE and JOYSTICK ports.  Removed CN200 (JOYSTICK) for space.  MOUSE and SERIAL look identical, don't plug serial devices into the mouse port or you will fry something!
+AUDIN and AUDOUT removed.
++5V rail instead of +5V_USER to power controller ports.  Controller port power changed to same as a1200 (4R7 and 0.22 uF).
+
+Page 3:
+Changed serial port to 9 pin DSUB.  Be careful not to plug the mouse in here or mouse will fry.
+Serial and controller port filters changed to be same as A1200.
+Removed "INFERNAL SERIAL" port.
+Removed the AUDIN and AUDOUT lines, these are no longer useful without a modem.
+Substituted Q300 2SC945 NPN transistor for 2N3904.
+Added J351 header for case RESET_SW and a debounce circuit.
+Added extra Power and FDD LED options.  Extra LED circuitry added since prototype made, untested but there is no reason they will not work.
+
+Page 4:
++5V_USER, +12V_USER, -12V_USER have been omitted.  Ports fed from +5V rail instead.
+Added optional -5V regulator in case the ATX PSU does not have a -5V rail (most likely won't need -5V anyhow).
+Removed the TICK line, no TICK signal on ATX supply. The TICK input of U300 is connected to the _VSYNC line (like in the A500) see page 10.
+J450 for case On/Off momentary push button switch.  U450 555 timer and U451 NOT gate toggle for the ATX PSU.  Powered from +5VSB.  
+J400 grounds the #PS_ON signal (ATX pin 16) to start the PSU if using a toggle switch or a jumper during testing (effectively bypasses U450 & U451).
+
+Page 5:
+Chip ram moved to Agnus board.
+Changed J500 to normally open by default (closed by default on A2000 and A500).  Close this jumper for 512 kb Agnus or if you want Ranger Ram instead of Chip Ram.
+Modified ROM addressing to allow 1 MB custom roms to be addressed and use of larger EPROMS as kickstart switchers.
+
+Page 6:
+Removed all but first Zorro port and the CFGIN/CFGOUT logic.
+Rearranged the resistor packs to make it easier for board layout.
+
+Page 7:
+Removed ISA bus entirely.  Bridgeboards are retarded.
+
+Page 8:
+Changed BT800 to CR1220 battery holder.  Replaced R308 with D308 schottky diode to prevent the computer from charging it (standard mod when replacing RTC batteries with coin cells).
+Lines _EBG2 through _EBG5 go nowhere, they are only shown for completeness.
+
+Page 9:
+Agnus, ram control lines, and X1 28 MHz oscillator moved to Agnus card.  Replaced with 80 pin header.
+Added J950 header for 14 MHz clock if it is generated on the Agnus card.
+XCLK option has been removed.
+
+Page 10:
+TICK now connected to _VSYNC via J300 same as A500.  No provision for a PSU TICK signal.  If you need separate TICK cut J300 then solder a wire to pin 2.
+Removed external FDD port and added header CN950 with signals only found on that port.
+Changed parallel port to internal 26 pin header.  Parallel port EMI filtering same as A1200.
+Added A500 keyboard port, primarily for a future USB adaptor but you can use A500 keyboard.
+
+Page 11:
+Removed Video Slot for space.
+Changed RGB analogue output to buffered 15 pin "VGA" style socket.  Buffered RGB using THS7316DRG4.  Can by bypassed, don't install the THS7316DRG4 or resistors R1201-R1206, then bridge jumpers J1201-J1203.  To bypass the HSYNC & VSYNC buffer don't install R1207&R1208 then bridge J1204 & J1205.
+Added internal header for (unbuffered) Analogue Video.  For future addition of SVideo via the AD723ARUZ PAL/NTSC encoder IC.
+Added RGB2HDMI interface onboard.
+EMI200 and EMI229 changed to SMD components since prototype; this change is untested but functionally identical.
+
+Page 12:
+Added header CN650, the CPU signals that are ordinarily on the CPU socket but not present on the CPU slot (plus E).
