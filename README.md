@@ -82,36 +82,52 @@ This is a self-funded project and none of the companies mentioned have paid me a
 Finally, I had dramas with the tiny resistor packs every time I had to install them.  They're a real pain in the bum to solder by hand, and because JLC didn't have most of them in stock so I had to do it myself.  If your board doesn't work straight away, try reflowing all the resisitor packs.  If your mouse doesn't move check the resistor packs.  If you're cracking the shits it's probably because of the resistor packs.  You get the picture.  If you have a microscope it's really useful to check each one as you go.
 
 ## References
-Commodore Amiga References:
+### Commodore Amiga References
+
 Commodore Amiga A500/A2000 Technical Reference Manual.
-Commodore schematics for A2000 Rev 4 & Rev 6.2, A500 Rev 6 & Rev 8 (A500+), and A1200 R1D4 schematics.  Scanned originals and amigawiki.org rebuilds referenced.
+
+Commodore schematics for A2000 Rev 4 & Rev 6.2, A500 Rev 6 & Rev 8 (A500+), and A1200 R1D4 schematics.  Scanned originals and amigawiki.org vector schematics referenced.
+
 Coprocessor Expansion and 86 Pin Signals on Amiga Computers by Dave Haynie; this is presumably a Commodore document.
 
-Other References:
+### Other References
 DTX Mechanical Interface Specification rev 1.0.
+
 ATX Specification v2.1 & v2.2.
+
 Intel ISA Bus Specification and Application Notes.
+
 Silverstone (r) ML109 case datasheet, www.silverstonetek.com.
 
-Other Projects incorporated into this one:
-RGB2HDMI:
+### Other Projects incorporated into this one
+#### RGB2HDMI
 https://github.com/c0pperdragon/Amiga-Digital-Video
+
 https://github.com/Bloodmosher/Amiga-VideoSlot-RGBtoHDMI
-Video Output:
-https://www.pcbway.com/project/shareproject/Commodore_Amiga_DB23_RGB_External_Video
-  _Buffer_V6_Compatible_with_GBS_8200_822_00cf763f.html
 
-Symbols:
-Symbols and footprints for most parts were downloaded from Mouser/Samacsys, and most were modified to make the schematics more readable.  Samacsys parts probably aren't covered by the Open Source license.  Footprints and symbols for generic parts e.g. jumpers/headers use Kicad libraries. 
+#### Video Output
+https://www.pcbway.com/project/shareproject/Commodore_Amiga_DB23_RGB_External_Video_Buffer_V6_Compatible_with_GBS_8200_822_00cf763f.html
 
-Datasheets:
+### Symbols
+Symbols and footprints for most parts were downloaded from Mouser/Samacsys, and most were modified to make the schematics more readable.  Samacsys parts probably aren't covered by the Open Source license.  
+
+Footprints and symbols for generic parts e.g. jumpers/headers use Kicad libraries. 
+
+Most of the Amiga specific parts were modified from my SMD500 project.
+
+### Datasheets
 Links to datasheets are in the symbol metadata.
+
 VGA Pinout Guide, https://pinoutguide.com/Video/VGA15_pinout.shtml.
+
 M27C400 & M27C800 EPROM data sheets.
+
 SPC Multicomp DSub9 to DSub25 adapter, http://www.farnell.com.
 
-Technical Guides:
+### Technical Guides
 CTS Corporation Application Note: Crystal Basics, CTS Corporation.
+
 A Guide to Debouncing by Jack G. Ganssle © 2004 The Ganssle Group.
+
 555 timer in monostable mode https://todbot.com/blog/2010/01/02/momentary-button-as-onoff-toggle-using-555/.
 
